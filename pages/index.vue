@@ -56,9 +56,10 @@
 
     const { data: users3 } = await useFetch('https://jsonplaceholder.typicode.com/users')
 
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=Mandalay,myanmar&appid=f6f31e6f2b3a76c65401b814d87e147d"
+    // const url = "https://api.openweathermap.org/data/2.5/weather?q=Mandalay,myanmar&appid=f6f31e6f2b3a76c65401b814d87e147d"
 
     const { data: user } = await useFetch('https://jsonplaceholder.typicode.com/users/1', { pick: ['id','name','email']});
 
-    const { data: weather } = await useFetch(url);
+    const { data: weather } = await useFetch('/api/weather');
+    
 </script>
